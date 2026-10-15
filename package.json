@@ -1,0 +1,17 @@
+{
+  "name": "rialo-pm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rialo PM testnet product with AI, NFT, market, and swap flows.",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build:contracts": "node build-rialo-market.js && node build-rialo-nft-marketplace.js && node build-rialo-swap.js",
+    "test": "node test-cancel-listing.mjs"
+  },
+  "devDependencies": {
+    "solc": "^0.8.35"
+  }
+}
